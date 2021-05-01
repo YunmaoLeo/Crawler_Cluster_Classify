@@ -10,4 +10,13 @@
 |6|聚类模型及簇数选择|1) 使用*MiniBatchKMeans*模型作为 <br>2) 使用*silhouette_score*协助进行簇数选择 <br>3) 聚类完成后分为4大类，0为金融相关岗位,1&3为计算机相关岗位，2为其他<br>(水木社区实习板块中金融与计算机领域的实习信息数量更多)|
 |7|在给定聚类标签的情况下，搭建能分辨出金融、计算机岗位的分类器模型|*estimators=<br>('Tfid',TfidfVectorizer()),('KPCA',KernelPCA(n_components=100,kernel='rbf')),('xgb',xgboost.XGBClassifier(use_label_encoder=False))]<br><br>pipeline = Pipeline(estimators)<br>parameters=<br><br>{'KPCA__n_components':(4,50,100,150),<br>'xgb__max_depth':(8,7,6,5),<br>'xgb__n_estimators':(100,300,500)}<br><br>grid_search = GridSearchCV(pipeline,parameters,n_jobs=-1,verbose=1)*
 |8|模型评估|1) *Confusion Matrix* <br>2) *Classification_report*
-|9|保存模型|*joblib.dump(model_clf,'Classification_model.joblib')*
+|9|保存模型|*joblib.dump(model_clf,'Classification_model.joblib')*  
+  
+<br>
+
+# HOW TO USE IT
+
+>[岗位爬虫及分类: *Scray_Classify.ipynb*](../codes/Scrapy_Classify.ipynb)
+>+ 在Notebook内填写 *start* 与 *end* 参数，分别对应水木社区网页链接<br>"https://www.newsmth.net/nForum/#!article/Intern/***{id}***"<br>***id***字段的开始与结束
+>+ code中默认去除岗位信息中无简历投递邮箱的数据，可根据自己需求进行调整
+>+ 运行结束后将分别导出 *\.csv, .txt* 结果
