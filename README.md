@@ -1,0 +1,2 @@
+# Scrapy_Cluster_Classify
+Python爬取水木社区并使用MiniBatchKMeans聚类，使用xgbClassify实现简单的岗位分类
