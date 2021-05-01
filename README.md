@@ -16,7 +16,7 @@
 
 # HOW TO USE IT
 
->[岗位爬虫及分类: `Scray_Classify.ipynb`]('../codes/Scrapy_Classify.ipynb')
+>[岗位爬虫及分类: `Scray_Classify.ipynb`](/codes/Scrapy_Classify.ipynb)
 >+ 在Notebook内填写 `start` 与 `end` 参数，分别对应水木社区网页链接<br>"https://www.newsmth.net/nForum/#!article/Intern/`{id}`"<br>`id`字段的开始与结束
 >+ code中默认去除岗位信息中无简历投递邮箱的数据，可根据自己需求进行调整
 >+ 运行结束后将分别导出 `csv`, `txt` 结果
