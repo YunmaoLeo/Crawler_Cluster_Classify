@@ -33,7 +33,6 @@
 
 <br>
 
-<<<<<<< HEAD
 # ClassificationModel
 ## LabelMark
 
