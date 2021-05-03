@@ -1,4 +1,4 @@
-|Contents|
+  |Contents|
 |--------|
 |[PROJECT OVERVIEW](#project-overview)|
 |[HOW TO USE IT](#how-to-use-it)|
@@ -115,8 +115,8 @@ Pipeline(steps=[('Tfid', TfidfVectorizer()),
         量化交易       0.78      0.82      0.80        97
 
     accuracy                           0.77      4200
-   macro avg       0.77      0.75      0.76      4200
-weighted avg       0.77      0.77      0.77      4200
+    macro avg       0.77      0.75      0.76      4200
+    weighted avg       0.77      0.77      0.77      4200
 >
 <br><br>
 
