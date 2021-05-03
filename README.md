@@ -16,7 +16,7 @@
 |4|文本分词及向量化|1) *preprocess()* 结合停用词字典清洗文本 <br>2) 使用jieba_fast进行分词 <br>3) *TfidVectorizer() TfidTransformer*文本向量化|
 |(4.5)|尝试使用KernelPCA降维后使用MiniBatchKMeans做聚类，但发现聚类结果中不同样本数量偏差过大，但能显著出金融、计算机相关岗位的类别，可能是因为这两类的数量居多|``待解决``|
 |5|根据岗位信息标题进行标注,共分8类|```df['TARGET']=(df['title_no_bracket']).apply(lambda x: label_mark(x))```|
-|6|在给定标签的情况下，搭建Xgboost分类器模型|*estimators=<br>('Tfid',TfidfVectorizer()),('KPCA',KernelPCA(n_components=100,kernel='rbf')),('xgb',xgboost.XGBClassifier(use_label_encoder=False))]<br><br>```pipeline = Pipeline(estimators)```|
+|6|在给定标签的情况下，搭建Xgboost分类器模型|```estimators=<br>('Tfid',TfidfVectorizer()),('KPCA',KernelPCA(n_components=100,kernel='rbf')),('xgb',xgboost.XGBClassifier(use_label_encoder=False))]```<br><br>```pipeline = Pipeline(estimators)```|
 |7|模型评估|0) *sklearn.model_selection.cross_val_predict*<br>1) *Confusion Matrix* <br>2) *Classification_report*
 |8|保存模型|```joblib.dump(model_clf,'Classification_model.joblib')```
 
