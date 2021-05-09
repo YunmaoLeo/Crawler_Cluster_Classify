@@ -1,11 +1,16 @@
-  |Contents|
-|--------|
-|[PROJECT OVERVIEW](#project-overview)|
-|[HOW TO USE IT](#how-to-use-it)|
-|[CLASSIFICATION MODEL](#classificationmodel)|
-|[FILE MENU](#filemenu)
-|[RELATED INFO](#related-info)
-
+# MENU
+- [MENU](#menu)
+- [PROJECT OVERVIEW](#project-overview)
+- [HOW TO USE IT](#how-to-use-it)
+- [ClassificationModel](#classificationmodel)
+  - [LabelMark](#labelmark)
+  - [LabeledDataset](#labeleddataset)
+  - [Xgboost Model with Pipeline](#xgboost-model-with-pipeline)
+  - [Classification_report](#classification_report)
+- [FILEMENU](#filemenu)
+- [RELATED INFO](#related-info)
+  - [XBGOOST](#xbgoost)
+  - [Stacking & Bagging](#stacking--bagging)
 # PROJECT OVERVIEW
 
 |INDEX|PROCESS|IMPLEMENT|
